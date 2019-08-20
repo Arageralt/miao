@@ -1,10 +1,17 @@
 
-module.exports ={
-    devServer: {
-        historyApiFallback: true,
-        noInfo: true,
-        port: 8080,
-      },
+module.exports={
+  devServer: {
+    proxy:{
+      '/api':{
+        target :'http://39.97.33.178',
+        changeOrigin:true
+        //代理城市接口地址
+      }
+    }
+  
+}
+   
+     
 // baseUrl:'/',//根路径
 // outputDir:'dist',//构建输出目录
 // assetsDir:'assets',//
