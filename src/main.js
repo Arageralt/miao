@@ -3,6 +3,10 @@ import App from './App.vue'
 import router from './routers'
 import store from './stores'
 import axios from 'axios'
+import Scroller from '@/components/Scroller'
+Vue.component('Scroller' , Scroller);
+import Loading from '@/components/Loading'
+Vue.component('Loading',Loading);
 Vue.prototype.axios=axios;
 //可以通過this來获取axios
 Vue.config.productionTip = false
