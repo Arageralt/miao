@@ -42,6 +42,9 @@ export default {
            prevCityId : -1
         };
 	},
+	methods：{
+		h
+	}
 	activated(){
         var cityId = this.$store.state.city.id;
         if( this.prevCityId === cityId ){ return; }
@@ -55,11 +58,6 @@ export default {
 			}
 			
 		})
-	},
-	methods :{
-		handleToDetail(movieId){
-			this.$router.push('/movie/detail/2/'+movieId);
-		}
 	}
 }
 </script>
