@@ -78,7 +78,7 @@ export default {
   },
   methods :{
       handleToDetail(movieId){
-          this.$router.push('/movie/detail/1/'+movieId);
+          console.log(movieId);
           //接收上面方法的item.id
       },
       handleToScroll(pos){

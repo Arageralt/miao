@@ -77,8 +77,8 @@ export default {
          });
   },
   methods :{
-      handleToDetail(movieId){
-          this.$router.push('/movie/detail/1/'+movieId);
+      handleToDetail(movieid){
+          console.log('taptap');
           //接收上面方法的item.id
       },
       handleToScroll(pos){

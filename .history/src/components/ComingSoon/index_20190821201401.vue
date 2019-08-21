@@ -57,7 +57,7 @@ export default {
 		})
 	},
 	methods :{
-		handleToDetail(movieId){
+		handleToDetail(){
 			this.$router.push('/movie/detail/2/'+movieId);
 		}
 	}
